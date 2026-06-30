@@ -1,7 +1,9 @@
 import './App.css'
 
-import { chakra, ChakraProvider, Text, Flex, Box} from '@chakra-ui/react'
+import { Text, Flex, Box} from '@chakra-ui/react'
 import { Provider } from "@/components/ui/provider"
+import profile from './constants/basic_profile.yaml'
+
 
 function App() {
 
@@ -10,7 +12,7 @@ function App() {
        <Flex mx="25%" mt="2%" direction="column" h='100vh'>
         <Box >
           <Text color={'black'} textStyle="6xl" textAlign='center'>
-          hi :D im gerald, welcome to my page? 
+              {profile.profile.title}
         </ Text >
         </Box>
       </Flex>
